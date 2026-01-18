@@ -69,20 +69,9 @@ codon_amino_acid_map = {
     "GGU": "G", "GGC": "G", "GGA": "G", "GGG": "G"
 }
 
-# Tradução
-# Usar um for loop para passar um visor pelo codigo genético
-# Isola cada codon
-# Cria ou uma string com cada aminoácido appended
-# Output model: >Cc01_g00010 Putative disease resistance protein RGA3
-# MADAAVSATIKVALQALKKLDKSAARIQCFLAGADEAKYCNDPKLLGVQKWLKDLEEEVF
-# Fazer um with open para criar um arquivo fasta de saída
-# Criar dois teste: um arquivo contendo uma sequência de gene localizado na fita forward
-# Outro arquivo um gene localizado na fita complemento
-# O script localizador na cabeçalho de sequência do gene se ele está na fita forward ou reversa
-# Se estiver na reversa a sequência da proteína terá que estar no reverso complementar dela e ser invertida
-# Ao terminar upar no girhub
-# Explicar o que o arquivo faz e como utilizar
+# Translation
 
+#Loop that scans the genetic and translates into aminoacids
 protein = ""
 for i in range(0, len(mensageiro),3):
   codon = mensageiro[i:i+3]
